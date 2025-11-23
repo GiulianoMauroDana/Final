@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -18,6 +19,16 @@ public class SceneManager : MonoBehaviour
     }
     public void ChangeScene()
     {
-        //SceneManager.LoadScene(indexScene);
+        SceneManager.LoadScene(indexScene);
+    }
+
+    private static void LoadScene(int indexScene)
+    {
+        throw new NotImplementedException();
+    }
+
+    internal static void LoadScene(string v)
+    {
+        throw new NotImplementedException();
     }
 }
