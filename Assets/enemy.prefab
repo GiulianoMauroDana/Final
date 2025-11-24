@@ -105,7 +105,7 @@ CapsuleCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -125,8 +125,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 131428a6d7661364cb2e48416b6a6266, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scoreText: {fileID: 0}
+  titleText: {fileID: 0}
+  subtitleText: {fileID: 0}
   _score: 1
+  damage: 0
 --- !u!114 &7503681933398695691
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -139,8 +141,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d501e0e4ad0ca584c8382f4938aa90d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  miagente: {fileID: 0}
-  objetivo: {fileID: 0}
+  miagente: {fileID: -989244574221654240}
+  objetivo: {fileID: 4314729057865010023, guid: df7562c756ffa5b4295ae6efe87dc057, type: 3}
 --- !u!195 &-989244574221654240
 NavMeshAgent:
   m_ObjectHideFlags: 0

@@ -4,9 +4,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class Enemy : MonoBehaviour
-{
-    [SerializeField] private TextMeshProUGUI titleText;
-    [SerializeField] private TextMeshProUGUI subtitleText;
+{   
     [SerializeField] private int _score;
     [SerializeField] private int damage;
     public static Action<int> enemyKill;

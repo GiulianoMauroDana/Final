@@ -11,6 +11,7 @@ public class Player1 : MonoBehaviour
     [SerializeField] private TextMeshProUGUI subtitleText;
     [SerializeField] private Image barHealth;
     [SerializeField] private int _health;
+    [SerializeField] private float _clockTime;
     private static int _score;
     //private static int _damage;
 
@@ -21,8 +22,7 @@ public class Player1 : MonoBehaviour
     }
 
     private void Update()
-    {
-        WinCondision();
+    {        
         Reiniciar();
         UpdateUI();
     }
@@ -31,14 +31,14 @@ public class Player1 : MonoBehaviour
         Enemy.enemyKill += CountPoints;
         Enemy.enemyDamage += CountDamage;
         boxHealth.healthRestore += CountHealth;
-
+        timer.clockValue += WinCondision;
     }
     private void OnDisable()
     {
         Enemy.enemyKill -= CountPoints;
         Enemy.enemyDamage -= CountDamage;
         boxHealth.healthRestore -= CountHealth;
-
+        timer.clockValue -= WinCondision;
     }  
     
     private void CountHealth(int health)
@@ -76,9 +76,10 @@ public class Player1 : MonoBehaviour
         scoreText.text = "Score:" + _score.ToString();
         barHealth.fillAmount = _health / 100f;
     }
-    private void WinCondision()
+    private void WinCondision(float clockTime)
     {
-        if (_score == 4)
+        _clockTime = clockTime;
+        if (_clockTime <= 0f)
         {
             titleText.text = "win";
             subtitleText.text = "Press R to restart";
