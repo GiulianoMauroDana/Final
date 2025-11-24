@@ -7,11 +7,9 @@ public class Enemy : MonoBehaviour
 {
     [SerializeField] private TextMeshProUGUI titleText;
     [SerializeField] private TextMeshProUGUI subtitleText;
-    [SerializeField] private int _score;
-    [SerializeField] private int damage;
-    public static Action<int> enemyKill;
-    public static Action<int> enemyDamage;
-    // private bool 
+    [SerializeField] private int _score;    
+    public static Action<int> enemyKill;    
+   // private bool 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -28,8 +26,9 @@ public class Enemy : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-            enemyDamage?.Invoke(damage);
-            Destroy(gameObject);
+            titleText.text = "Lose ";
+            subtitleText.text = "Press R to Restart";
+            Destroy(collision.gameObject);            
         }
         if (collision.gameObject.CompareTag("bullet"))
         {
@@ -44,7 +43,7 @@ public class Enemy : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.R))
         {
-            SceneManager.LoadScene("Playground 1");
+           // SceneManager.LoadScene("Playground 1");
         }
     }   
 }

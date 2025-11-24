@@ -2,7 +2,7 @@ using System;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class SceneManager : MonoBehaviour
+public class ManagerController : MonoBehaviour
 {
     public bool nextScene;
     public int indexScene;
@@ -22,13 +22,5 @@ public class SceneManager : MonoBehaviour
         SceneManager.LoadScene(indexScene);
     }
 
-    private static void LoadScene(int indexScene)
-    {
-        throw new NotImplementedException();
-    }
-
-    internal static void LoadScene(string v)
-    {
-        throw new NotImplementedException();
-    }
+   
 }
