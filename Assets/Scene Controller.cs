@@ -15,11 +15,14 @@ public class ManagerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (nextScene)
+        {
+            ChangeScene(indexScene);
+        }
     }
-    public void ChangeScene()
+    public void ChangeScene(int index)
     {
-        SceneManager.LoadScene(indexScene);
+        SceneManager.LoadScene(index);
     }
 
    
