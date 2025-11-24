@@ -43,7 +43,7 @@ public class Enemy : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.R))
         {
-           // SceneManager.LoadScene("Playground 1");
+            SceneManager.LoadScene("Playground 1");
         }
     }   
 }
