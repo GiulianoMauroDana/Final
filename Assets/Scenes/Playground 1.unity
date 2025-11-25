@@ -148,7 +148,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0c28794ae23553d4bb54b4fe0cf60c6d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeClock: 120
+  timeClock: 60
   clock: {fileID: 418962435}
 --- !u!4 &57197921
 Transform:
@@ -259,63 +259,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5af670744cd8c6f439e3cacb7d8e8acf, type: 3}
---- !u!1001 &411840704
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: -8679921383154817045, guid: 239072e15d6ad67489292308fbb6322f, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -3.0630152
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 239072e15d6ad67489292308fbb6322f, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -0.00000011920929
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 239072e15d6ad67489292308fbb6322f, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -0.30836034
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 239072e15d6ad67489292308fbb6322f, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 239072e15d6ad67489292308fbb6322f, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 239072e15d6ad67489292308fbb6322f, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 239072e15d6ad67489292308fbb6322f, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 239072e15d6ad67489292308fbb6322f, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 239072e15d6ad67489292308fbb6322f, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 239072e15d6ad67489292308fbb6322f, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: 239072e15d6ad67489292308fbb6322f, type: 3}
-      propertyPath: m_Name
-      value: Yaku J Ignite
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 239072e15d6ad67489292308fbb6322f, type: 3}
 --- !u!1 &418962433
 GameObject:
   m_ObjectHideFlags: 0
@@ -1323,8 +1266,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemyPrefab: {fileID: 935821368}
-  timeClock: 2
-  timeSpanw: 2
+  timeClock: 1
+  timeSpanw: 1
   spawnPoint: {fileID: 1549108436}
 --- !u!4 &1549108436
 Transform:
@@ -3254,4 +3197,3 @@ SceneRoots:
   - {fileID: 1572579096}
   - {fileID: 1552540004}
   - {fileID: 1726522481}
-  - {fileID: 411840704}
